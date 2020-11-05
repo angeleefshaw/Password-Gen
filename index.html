@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="script" href="./assets/script.js"/>
+  </head>
+  <body>
+    <!-- create div to hold body elements -->
+    <div class="wrapper">
+      <!-- main header -->
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <!-- card to hold content and input boxes -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <!-- text feild for generated password display -->
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="inputs">
+          <!-- tells program to take all inputs and generate password -->
+          <button type="button" id="generate" class="btn">Generate Password</button>
+          <!-- input form for password preferences -->
+          <form class="forms">
+            <!-- input for # of characters with a min of 8 and max of 128 -->
+            <label for="characterAmount">Number of Characters</label>
+            <input id="characterAmount" type="number" min="8" max="128">
+            <!-- input field -checkbox- for special characters  -->
+            <label for="specialCharacter">Special Characters</label>
+            <input id="specialCharacter" type="checkbox" onclick="isChecked()" minlength="1" maxlength="8">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
