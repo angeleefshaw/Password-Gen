@@ -12,10 +12,10 @@ const isChecked = (variableName, firstArr, secondArr) => {
   } else {
     secondArr.push('');
   }
-  return console.log(secondArr)
 }
 
-isChecked(speicalCharacter, symbols, finalArr)
+const updatedArr = isChecked(speicalCharacter, symbols, finalArr)
+console.log(updatedArr)
 
 const specialCharacter = document.querySelector("#specialCharacter");
 const generateBtn = document.querySelector("#generate");
