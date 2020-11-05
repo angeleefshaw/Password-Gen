@@ -1,3 +1,8 @@
+const symbols= ['!','@','#','&','%','^','&','*','+','?']
+// const numbers = [1,2,3,4,5,6,7,8,9]
+// const upperCase = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
+const finalArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var password = generatePassword();
 
 const isChecked = (variableName, firstArr, secondArr) => {
   if (variableName.checked === true) {
@@ -10,27 +15,35 @@ const isChecked = (variableName, firstArr, secondArr) => {
   return console.log(secondArr)
 }
 
-var generateBtn = document.querySelector("#generate");
-var characterAmountinput = document.querySelector("#characterAmount");
-const specialCharacter = document.querySelector("#specialCharacter");
+isChecked(speicalCharacter, symbols, finalArr)
 
-const finalArray = [];
+const specialCharacter = document.querySelector("#specialCharacter");
+const generateBtn = document.querySelector("#generate");
+var passwordText = document.querySelector("#password");
+
+// Generate password function that takes final array and shuffles it
+const generatePassword =(finalArray.map( finalArr => {
+  Math.floor(math.random() * finalArr.length))
+}
+
+// pushes the generated password to the text area 
+generateBtn.addEventListener('click', ()=> {
+  passwordText.innerhtml= generatePassword.join('');
+})
+
+
+// var characterAmountinput = document.querySelector("#characterAmount");
+
+
+
+// passwordText.value = password;
+
+
 
 
 // var lowerCase = ['abcdefghijklmnopqrstuvwx,'y','z']
-const symbols= ['!','@','#','&','%','^','&','*','+','?']
-var numbers = [1,2,3,4,5,6,7,8,9]
-var upperCase = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
 
-// Write password to the #password input
-// function writePassword(1, characters) {
-//   for (i=0; i<=numOfCharacters.value; i++){
-//     password = password + lowerCase.charAt(math.floor(math.random()))
-//   }
-//}
-  // var password = generatePassword();
-  // var passwordText = document.querySelector("#password");
-  // passwordText.value = password;
+
 
 
 
