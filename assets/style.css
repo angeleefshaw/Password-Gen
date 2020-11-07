@@ -71,8 +71,7 @@ header {
   justify-content: center;
   column-gap: 4rem;
   row-gap: 2rem;
-  line-height: 2rem;
-
+  display:contents;
 }
 
 .inputs::before {
