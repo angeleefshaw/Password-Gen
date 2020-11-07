@@ -127,6 +127,14 @@ button[disabled] {
   margin: .5rem;
 }
 
+#uppercase {
+  margin: .5rem;
+}
+
+#number {
+  margin: .5rem;
+}
+
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
