@@ -3,7 +3,7 @@ Generate random passwords with Javascript
 
 Find the live app at https://angeleefshaw.github.io/Password-Generator/
 
-![Password-Homepage](./assets/Password-Generator-App-Psage.png)
+![Password-Homepage](./assets/Password-Generator-App-Page.png)
 
 # Description 
 
